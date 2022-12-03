@@ -1,2 +1,2 @@
-# Macrons-NN
+# Macarons-NN
 Group web-project
