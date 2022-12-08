@@ -243,7 +243,11 @@ li {
     margin-bottom: 50px;
 }
 /* оновная страница-акции */
-.promotions__title{
+.promotions{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.main-page__title{
     text-align: center;
     margin: auto;
     margin-top: 120px;
