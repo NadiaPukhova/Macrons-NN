@@ -1,0 +1,51 @@
+@media (max-width:985px) {
+    /* убираем некоторые ссылки в верхнем меню шапки */
+    .top-menu__left__menulist{
+        display: block;
+        margin-left: 20px;
+    }
+    .top-menu__left__listitem{
+        margin-bottom: 10px;
+    }
+    .phone-icon{
+        display: block;
+    }
+    .phone-number{
+        display: none;
+    }
+    .city{
+        display: none;
+    }
+    /* создаем бургер вместо нижнего меню */
+    .header__burger-btn{
+        display: block;
+        position: relative;
+    }
+    .header__bottom-menu{
+        padding: 18px;
+    }
+    .bottom-menu{
+        position: absolute;
+        padding: 110px 20px 20px 20px;
+        width: 280px;
+        left: -280px;
+        top: 0;
+        background-color: #F3EEED;
+        transition: transform .5s;
+        box-shadow : 0px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    .bottom-menu__menulist{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .bottom-menu__menulist :hover{
+        background-color: #fff;
+    }
+    .bottom-menu__listitem a{
+        display: block;
+    }
+    .header__bottom-menu.open .bottom-menu{
+        transform: translateX(100%);
+    }
+}
