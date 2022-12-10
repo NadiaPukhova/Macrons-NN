@@ -268,3 +268,53 @@ filter: brightness(50%);
 .promotions__text span{
     font-weight: 700;
 }
+/* оновная страница-готовые наборы */
+.ready-set{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.grid-field-1 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.grid-field-2 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.ready-set__item-small{
+    width: 450px;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 65px;
+    background: #FFFAFD;
+}
+.ready-set__price{
+    font-family: 'Ledger';
+    font-size: 40px;
+}
+.ready-set__item-big{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    /* если включить ширину блока то грид ломается хз почему */
+    /* width: 700px; */
+    height: 630px;
+    background: #FFFAFD;
+}
+.ready-set__item-big__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    height: 350px;
+}
+/* оновная страница-о нас */
+
