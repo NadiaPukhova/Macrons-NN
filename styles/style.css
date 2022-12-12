@@ -483,6 +483,24 @@ filter: brightness(50%);
 }
 
 .catalog__btn-order {
-    padding: 20px 105px;
+    width: 350px;
+}
+
+
+/*Пустая корзина*/
+
+.basket  p {
+    
+
+}
+
+.basket__btn {
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 140px;
+}
+
+.basket__btn a {
+    padding: 20px 80px;
 }
 
