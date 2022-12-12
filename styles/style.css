@@ -49,6 +49,15 @@ h3{
     color: #083131;
 }
 
+h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #083131;
+}
+
 li {
     list-style: none;
 }
@@ -351,22 +360,129 @@ filter: brightness(50%);
     grid-gap: 15px 12px;
 }
 
-.catalog__item {
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+.radio__contant {
     background-color: #FFFFFF;
-    width: 300px;
-    height: 400px;
+    max-width: 300px;
+    max-height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 40px;
+    padding-bottom: 35px;
 }
 
-.catalog__text {
+.radio__input:checked + .radio__contant {
+    border: 3px solid #DF75B0;
+    color: #000;
+}
+
+.radio__text {
     text-align: center;
     max-width: 250px;
     margin-top: 15px;
 }
 
-.catalog__price {
+.radio__price {
     margin-top: 10px;
 }
+
+.catalog__oder {
+    max-width: 750px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.catalog__field {
+    margin-bottom: 30px;
+}
+
+.input-field {
+    display: block;
+    border: 3px solid #DF75B0;
+    background-color: #FFFFFF;
+    line-height: 28px;
+    padding: 26px 10px;
+    width: 100%;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 24px;
+    color: #083131;
+}
+
+.input-field:focus {
+    outline: none;
+}
+
+.input-field:focus::placeholder {
+    color: transparent;
+  }
+
+::placeholder {
+    color: #083131;
+    opacity: 50%;
+}
+
+.input-field--width {
+    min-width: 350px;
+}
+
+.catalog__oder h4 {
+    margin-bottom: 30px;
+}
+
+.radio__input:checked + span {
+    border: 3px solid #DF75B0;
+    color: #000;
+}
+
+.radio__input--style {
+    background-color: #FFFFFF;
+    border: 2px solid #D74C99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #083131;
+}
+
+.radio__input:checked + span {
+    background-color: #DF75B0;
+    color: #fff;
+}
+
+.catalog__field--ident {
+    margin-bottom: 30px;
+}
+
+.catalog__field textarea {
+    resize: none;
+}
+
+.catalog__btn {
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 140px;
+}
+
+.catalog__btn-order {
+    padding: 20px 105px;
+}
+

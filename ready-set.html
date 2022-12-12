@@ -105,49 +105,110 @@
     <section class="catalog">
         <div class="container">
             <h2 class="catalog__title main-page__title">Готовые наборы</h2>
-            <div class="catalog__grid">
-                <div class="catalog__item">
-                    <img src="images/catalog_1.jpg" alt="">
-                    <p class="catalog__text text">Набор макаронс кофе-лайм</p>
-                    <p class="catalog__price ready-set__price">510 ₽</p>
+            <form action="" class="form">
+                <!--Карточки товаров-->
+                <div class="catalog__grid">
+                    <label class="radio">
+                        <input class="radio__input visually-hidden" type="radio" name="param1" checked>
+                        <div class="radio__contant">
+                            <img src="images/catalog_1.jpg" alt="">
+                            <p class="radio__text text">Набор макаронс кофе-лайм</p>
+                            <p class="radio__price ready-set__price">510 ₽</p>
+                        </div>
+                    </label>
+                    <label class="radio">
+                        <input class="radio__input visually-hidden" type="radio" name="param1" checked>
+                        <div class="radio__contant">
+                            <img src="images/catalog_2.jpg" alt="">
+                            <p class="radio__text text">Набор макаронс ассорти</p>
+                            <p class="radio__price ready-set__price">765 ₽</p>
+                        </div>
+                    </label>
+                    <label class="radio">
+                        <input class="radio__input visually-hidden" type="radio" name="param1" checked>
+                        <div class="radio__contant">
+                            <img src="images/catalog_3.jpg" alt="">
+                            <p class="radio__text text">Набор макаронс с ягодными начинками</p>
+                            <p class="radio__price ready-set__price">850 ₽</p>
+                        </div>
+                    </label>
+                    <label class="radio">
+                        <input class="radio__input visually-hidden" type="radio" name="param1" checked>
+                        <div class="radio__contant">
+                            <img src="images/catalog_4.jpg" alt="">
+                            <p class="radio__text text">Набор макаронс с начинкой пломбир</p>
+                            <p class="radio__price ready-set__price">1020 ₽</p>
+                        </div>
+                    </label>
+                    <label class="radio">
+                        <input class="radio__input visually-hidden" type="radio" name="param1" checked>
+                        <div class="radio__contant">
+                            <img src="images/catalog_5.jpg" alt="">
+                            <p class="radio__text text">Набор макаронс начинкой мохито</p>
+                            <p class="radio__price ready-set__price">680 ₽</p>
+                        </div>
+                    </label>
+                    <label class="radio">
+                        <input class="radio__input visually-hidden" type="radio" name="param1" checked>
+                        <div class="radio__contant">
+                            <img src="images/catalog_6.jpg" alt="">
+                            <p class="radio__text text">Набор макаронс рафаэлло</p>
+                            <p class="radio__price ready-set__price">1700 ₽</p>
+                        </div>
+                    </label>
+                    <label class="radio">
+                        <input class="radio__input visually-hidden" type="radio" name="param1" checked>
+                        <div class="radio__contant">
+                            <img src="images/catalog_7.jpg" alt="">
+                            <p class="radio__text text">Набор макаронс ассорти</p>
+                            <p class="radio__price ready-set__price">1020 ₽</p>
+                        </div>
+                    </label>
+                    <label class="radio">
+                        <input class="radio__input visually-hidden" type="radio" name="param1" checked>
+                        <div class="radio__contant">
+                            <img src="images/catalog_8.jpg" alt="">
+                            <p class="radio__text text">Набор макаронс ассорти</p>
+                            <p class="radio__price ready-set__price">1275 ₽</p>
+                        </div>
+                    </label>
                 </div>
-                <div class="catalog__item">
-                    <img src="images/catalog_2.jpg" alt="">
-                    <p class="catalog__text text">Набор макаронс ассорти</p>
-                    <p class="catalog__price ready-set__price">765 ₽</p>
+                 <!--Оформление заказа-->
+                <div class="catalog__oder">
+                    <div class="d-flex jc-sb">
+                        <div class="catalog__field">
+                            <input class="input-field input-field--width" type="text" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="catalog__field">
+                            <input class="input-field input-field--width" type="tel" placeholder="Введите ваш номер телефона">
+                        </div>
+                    </div>
+                    <div class="catalog__field">
+                        <input class="input-field" type="email" placeholder="Введите ваш e-mail">
+                    </div>
+                    <h4>Способ доставки</h4>
+                    <div class="catalog__field catalog__field--ident d-flex jc-sb">
+                        <label class="radio">
+                            <input class="radio__input visually-hidden" type="radio" name="param2" checked>
+                            <span class="radio__input radio__input--style input-field--width">Доставка</span>
+                        </label>
+                        <label class="radio">
+                            <input class="radio__input visually-hidden" type="radio" name="param2" checked>
+                            <span class="radio__input radio__input--style input-field--width">Самовывоз</span>
+                        </label>
+                    </div>
+                    <h4>Комментарий к заказу (необязательно)</h4>
+                    <div class="catalog__field">
+                        <textarea class="input-field" placeholder="Введите комментарий к заказу" rows="3"></textarea>
+                    </div>
+                    <div class="catalog__btn">
+                        <button class="catalog__btn-order btn">Заказать</button>
+                    </div>
                 </div>
-                <div class="catalog__item">
-                    <img src="images/catalog_3.jpg" alt="">
-                    <p class="catalog__text text">Набор макаронс с ягодными начинками</p>
-                    <p class="catalog__price ready-set__price">850 ₽</p>
-                </div>
-                <div class="catalog__item">
-                    <img src="images/catalog_4.jpg" alt="">
-                    <p class="catalog__text text">Набор макаронс с начинкой пломбир</p>
-                    <p class="catalog__price ready-set__price">1020 ₽</p>
-                </div>
-                <div class="catalog__item">
-                    <img src="images/catalog_5.jpg" alt="">
-                    <p class="catalog__text text">Набор макаронс начинкой мохито</p>
-                    <p class="catalog__price ready-set__price">680 ₽</p>
-                </div>
-                <div class="catalog__item">
-                    <img src="images/catalog_6.jpg" alt="">
-                    <p class="catalog__text text">Набор макаронс рафаэлло</p>
-                    <p class="catalog__price ready-set__price">1700 ₽</p>
-                </div>
-                <div class="catalog__item">
-                    <img src="images/catalog_7.jpg" alt="">
-                    <p class="catalog__text text">Набор макаронс ассорти</p>
-                    <p class="catalog__price ready-set__price">1020 ₽</p>
-                </div>
-                <div class="catalog__item">
-                    <img src="images/catalog_8.jpg" alt="">
-                    <p class="catalog__text text">Набор макаронс ассорти</p>
-                    <p class="catalog__price ready-set__price">1275 ₽</p>
-                </div>
-            </div>
+            </form>
         </div>
+    </section>
+
     </section>
 
 </body>
