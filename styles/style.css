@@ -3,22 +3,25 @@
     margin: 0;
     padding: 0;
 }
-
+html {
+    width: 100vh;
+}
 body {
     margin: auto;
     background: #F3F3F3;
     font-family: 'Roboto';
 }
-
+.content{
+    margin-bottom: 300px;
+    min-height: calc(100%-170px);
+}
 .container{
     margin: auto;
     max-width: 1240px;
 }
-
 a {
     text-decoration: none;
 }
-
 .text{
     font-family: 'Roboto';
     font-style: normal;
@@ -341,3 +344,41 @@ filter: brightness(50%);
     font-weight: 700;
     margin: 20px 0;
 }
+
+/* футер */
+.footer{
+    background: #F3EEED;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding-top: 20px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+.footer-content{
+    height: 150px;
+}
+.footer-right a:hover{
+    color: #DE76AF;
+    transition: .3s;
+}
+.footer-right svg{
+    color: #083131;
+    transition: .3s;
+}
+.footer-right svg:hover{
+    color: #DE76AF;
+}
+.footer-right{
+    grid-gap: 10px;
+    height: 130px;
+}
+.footer-right__social{
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    margin-top: 50px;
+    column-gap: 20px;
+}
+
+

@@ -1,5 +1,7 @@
 @media (max-width:985px) {
     /* убираем некоторые ссылки в верхнем меню шапки */
+
+    
     .top-menu__left__menulist{
         display: block;
         margin-left: 20px;
@@ -47,5 +49,19 @@
     }
     .header__bottom-menu.open .bottom-menu{
         transform: translateX(100%);
+    }
+    .footer-right__social{
+        flex-direction: column;
+        margin-top: 0;
+        column-gap: 20px;
+    }
+    .footer-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 20px;
+    }
+    .footer-right__social__vk{
+        padding-bottom: 10px;
     }
 }
