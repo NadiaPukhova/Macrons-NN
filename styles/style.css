@@ -614,18 +614,14 @@ header{
 /*Пустая корзина*/
 
 .shoping-cart{
-    padding-top: 250px;
-    height: 100vh;
-}
-.shoping-cart  p {
-    
-
+    padding-top: 140px;
 }
 
 .shoping-cart__btn {
-    max-width: 350px;
-    margin: auto;
-    margin-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .shoping-cart__btn a {
